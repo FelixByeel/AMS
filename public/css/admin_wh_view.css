@@ -1,0 +1,27 @@
+
+/*----------------- category view ----------------- */
+.category-list {
+    padding: 5px 20px;
+}
+
+.parent, .child{
+    width: 100%;
+}
+
+.c-split {
+    display:block;
+    padding: 5px;
+    line-height: 30px;
+    border-bottom: solid 1px #ddd;
+}
+
+.c-split:hover {
+    transition: .3s;
+    background-color: #f2f2f2;
+}
+
+.action {
+    margin-right: 5%;
+    clear: both;
+    float: right;
+}

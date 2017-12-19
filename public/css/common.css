@@ -1,0 +1,404 @@
+/*======================== common ========================*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.fl-lt {
+    float: left
+}
+
+.fl-rt {
+    float: right
+}
+
+.enabled {
+    display: inline-block;
+    padding: 1px 10px;
+    line-height: 22px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #00BFFF;
+    text-align: center;
+}
+
+.disabled {
+    display: inline-block;
+    padding: 1px 10px;
+    line-height: 22px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #FFB800;
+    text-align: center;
+}
+
+.msg {
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* ------------------超链接------------------ */
+a {
+    text-decoration: none;
+}
+
+.action-link {
+    margin: 0 3px;
+    padding: 1px 5px;
+    display:inline-block;
+    line-height: 22px;
+    border-radius: 2px;
+    color: #FFF;
+    background-color: #009688;
+    text-align: center;
+}
+
+.action-link:hover {
+    color:#FFF;
+    background-color: #0cad9d;
+}
+
+.disabled-link {
+    cursor: not-allowed;
+}
+
+ul {
+    list-style: none;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.action-header {
+    height: 50px;
+}
+
+.link-header {
+    padding: 10px 20px;
+    float: right;
+}
+
+/*定位当前页面的导航菜单链接*/
+/*超级管理员*/
+.current-nav-home-page .nav-home-page, .current-nav-wh-list .nav-wh-list, .current-nav-wh-add .nav-wh-add, .current-nav-user-list .nav-user-list, .current-nav-user-add .nav-user-add, .current-nav-privilege-list .nav-privilege-list, .current-nav-privilege-add .nav-privilege-add{
+    color: #FFF;
+    background-color: #009688;
+}
+
+/*仓库管理员*/
+ .current-nav-cate-list .nav-cate-list, .current-nav-goods-list .nav-goods-list, .current-nav-box-list .nav-box-list, .current-nav-supplier-list .nav-supplier-list {
+    color: #FFF;
+    background-color: #009688;
+ }
+
+.current-nav-record-in .nav-record-in, .current-nav-record-check .nav-record-check, .current-nav-computer-list .nav-computer-list {
+    color: #FFF;
+    background-color: #009688;
+}
+
+/*普通用户*/
+.current-nav-goods-list .nav-goods-list, .current-nav-outstock-list .nav-outstock-list, .current-nav-instock-list .nav-instock-list {
+    color: #FFF;
+    background-color: #009688;
+}
+
+/*修改密码*/
+.current-nav-password-change .nav-password-change {
+    color: #FFF;
+    background-color: #009688;
+}
+
+.error-msg {
+    color:red;
+}
+
+/* 分页 */
+.page-wrapper{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.display-block {
+    display: inline-block;
+}
+
+.page-height {
+    height: 30px;
+    line-height: 30px;
+}
+
+.page-width {
+    width:30px;
+}
+
+
+.cur-link {
+
+    font-size: 16px;
+    background-color: #009688;
+    color:#FFF;
+}
+
+.page-link {
+
+    font-size: 16px;
+}
+
+.page-link:hover {
+    color: #009688;
+    background-color: #f5eded;
+}
+/*======================== nav ========================*/
+.nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #343434;
+}
+
+.logo {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px #1E9FFF;
+    text-align: center;
+    font-size: 2em;
+    color: #ddd;
+    background-color: #343434;
+}
+
+.nav-list {
+    width: 200px;
+    text-align: center;
+}
+
+.menu a{
+    display: block;
+    padding: 5px 0;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.menu a:hover {
+    color: #FFF;
+    background-color: #009688;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 20px;
+    border-top: 1px solid #aaa;
+    text-align: center;
+    line-height: 20px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+/*======================== header ========================*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 50px;
+    border-bottom: 1px solid #aaa;
+}
+
+.current-position {
+    margin-left: 50px;
+    float: left;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*person profile*/
+.profile-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 50px;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    z-index: 10;
+    color: #343434;
+    background-color: #FFF;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.profile-box:hover {
+    position: absolute;
+    top: 1px;
+    box-shadow: 1px 1px 7px 1px #D0D0D0;
+    -webkit-transition: box-shadow .3s;
+    -moz-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+}
+
+.head-icon {
+    margin: 10px auto;
+    margin-left: 20px;
+    padding: 1px;
+    width:25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #555;
+    overflow: hidden;
+}
+
+.head-icon img{
+    width: 25px;
+    height: 25px;
+}
+
+.user-nick-name {
+    margin-left: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.profile-box ul,li {
+    width: 200px;
+}
+
+.profile-box a {
+    display: block;
+    padding: 5px 0;
+    width: 200px;
+    color: #343434;
+    text-align: center;
+}
+
+.profile-box a:hover {
+    color: #FFF;
+    background-color: #666;
+}
+
+.header-name {
+    padding:2px 5px;
+    color:#343434;
+}
+
+.header-wh {
+    padding:2px 5px;
+    color:orangered;
+}
+/*======================== container ========================*/
+.container {
+    position: absolute;
+    top: 51px;
+    left: 200px;
+    bottom: 0;
+    right: 0;
+    background-color: #EDEDED;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 1px 3px 1px #ddd;
+    background-color: #FFF;
+}
+
+.con-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    padding-left: 5px;
+    line-height: 25px;
+    font-size: 1em;
+    background-color: #F3F3F3;
+}
+
+.content {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.search {
+    margin: 20px auto;
+}
+
+/*======================== table ========================*/
+.fixed-table {
+    table-layout: fixed;
+}
+
+.action-td {
+    width:240px;
+}
+
+.note-td {
+    width:250px;
+}
+
+.count-td {
+    width: 6%;
+}
+
+.center-td {
+    text-align: center;
+}
+
+/*======================== search ========================*/
+
+.search-form {
+    margin-top:20px;
+    margin-left:20px;
+}
+
+.search-label {
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+}
+
+/*======================== button ========================*/
+
+.cancel-btn{
+    background-color: #777 !important;
+}
+
+/*======================== more outstock detail ========================*/
+.label-name{
+    display: inline-block;
+
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.span-content{
+    display: inline-block;
+
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #343434;
+}
