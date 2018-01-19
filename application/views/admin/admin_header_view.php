@@ -54,7 +54,7 @@ defined('BASEPATH') or exit($tips);
                 <span class = "user-nick-name">
                     <?php
                         echo '<span class = \'header-name\'>' . $this->session->user_nickname . '</span>';
-                        echo '--<span class = \'header-wh\'>' . $this->session->user_warehouse_name . '</span>';
+                        echo (null !== $this->session->user_warehouse_name) ? ('--<span class = \'header-wh\'>' . $this->session->user_warehouse_name . '</span>') : '';
                     ?>
                 </span>
 
