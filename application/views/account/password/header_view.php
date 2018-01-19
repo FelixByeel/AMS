@@ -22,7 +22,7 @@ defined('BASEPATH') or exit($tips);
 
             <ul class = "nav-home nav-list mt-20">
                 <li class = "nav menu"><a class = "nav-password-change" href="javascript:;">修改密码</a></li>
-                <li class = "nav menu"><a class = "nav-back" href="<?php echo $old_uri; ?>">返回</a></li>
+                <li class = "nav menu"><a class = "nav-back" href="<?php echo isset($old_uri) ? $old_uri : ''; ?>">返回</a></li>
             </ul>
             <p class = "footer">&copy;<?php echo date('Y');?>.</p>
         </div>
@@ -38,7 +38,7 @@ defined('BASEPATH') or exit($tips);
                 <span class = "user-nick-name">
                     <?php
                         echo '<span class = \'header-name\'>' . $this->session->user_nickname . '</span>';
-                        echo '--<span class = \'header-wh\'>' . $this->session->user_warehouse_name . '</span>';
+                        echo (null !== $this->session->user_warehouse_name) ? ('--<span class = \'header-wh\'>' . $this->session->user_warehouse_name . '</span>') : '';
                     ?>
                 </span>
 
