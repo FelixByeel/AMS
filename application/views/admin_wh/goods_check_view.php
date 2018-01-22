@@ -33,7 +33,7 @@ defined('BASEPATH') or exit($tips);
                         </tr>
                         <tr>
                             <td>数量差异说明：</td>
-                            <td><textarea class="layui-textarea" name="notes" maxlength="200" cols="50" rows="5" ></textarea>
+                            <td><textarea class="layui-textarea" name="notes" maxlength="200" cols="50" rows="5" placeholder="实物数量与系统记录数量有差异时，必须填写说明，无问题可不填写。" ></textarea>
                             <td>
                                 <span class = "error-msg"><?php echo form_error('notes'); ?></span>
                             </td>
